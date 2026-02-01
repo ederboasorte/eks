@@ -1,5 +1,5 @@
 resource "aws_eip" "eip" {
-  count  = length(var.public_subnets)
+  count = length(var.public_subnets)
   #vpc = true
   domain = "vpc"
   tags = {
